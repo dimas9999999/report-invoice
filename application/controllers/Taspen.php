@@ -22,9 +22,13 @@ class Taspen extends CI_Controller
 
 	public function index()
 	{
+		/*
 		$data['list'] = $this->RdsTaspen->taspenlist();
 		$data['bulan'] = $this->RdsTaspen->listdropdown();
 		$this->load->view('rds/v_select', $data);
+		*/
+		redirect(base_url('taspen/lookupaspurjab?cari=all&year=all'));
+
 	}
 	
 	/* for edit params */
